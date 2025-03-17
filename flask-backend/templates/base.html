@@ -1,0 +1,16 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>title</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='tiny-brutalism.css') }}">
+    <script src="script.js"></script>
+    {% block head %}
+    {% endblock head %}
+  </head>
+  <body>
+    {% block content %}
+    {% endblock %}
+  </body>
+</html>
