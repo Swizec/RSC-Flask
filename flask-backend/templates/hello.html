@@ -6,12 +6,7 @@
     <h1>Tiny and Brutal</h1>
     <p>Tiny page rendered in Jinja. Using <a href="https://pruger.github.io/tiny-brutalism-css/">tiny-brutalism.css</a> for styling.</p>
     <p>The web as it used to be</p>
-    <p>Here is a cat. Python gets it from an API.<p>
-    <div class="row">
-        <div class="col col-4">
-            <img src="{{ cat_url }}" style="max-width: 100%"  />
-        </p>
-    </div>
+    {{ views.cat() | safe }}
 </div>
 
 
